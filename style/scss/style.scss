@@ -5,6 +5,42 @@ $dark-green: #1A4855;
 $semi-dark-green: #628E75;
 $white: #F9F9F9;
 
+$poppins: 'Poppins', sans-serif;
 
+#background {
+    height: 100vh;
+    background: rgb(26,72,85);
+    background: linear-gradient(308deg, rgba(26,72,85,1) 0%, rgba(98,142,117,1) 100%);
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    #header__brand {
+        img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+    #header__social {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        a {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
 
 @import "responsive";
