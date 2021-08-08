@@ -7,6 +7,10 @@ $white: #F9F9F9;
 
 $poppins: 'Poppins', sans-serif;
 
+html {
+    font-family: $poppins; 
+}
+
 #background {
     height: 100vh;
     background: rgb(26,72,85);
@@ -38,6 +42,66 @@ $poppins: 'Poppins', sans-serif;
             img {
                 width: 24px;
                 height: 24px;
+            }
+        }
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $white;
+    #main__content {
+        h2 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-weight: 900;
+            font-size: 4.25rem;
+            text-transform: uppercase;
+            padding: 15px 0 25px 0;
+        }
+        p {
+            line-height: 28px;
+            color: $white;
+        }
+        #main__content__buttons {
+            margin-top: 50px;  
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            #main__content__buttons__watch_now {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: $semi-dark-green;
+                border: 4px solid $semi-dark-green;
+                padding: 8px 30px;
+                transform: skewX(-20deg);
+                transition: 0.2s ease-in-out; 
+                img, p {
+                    transform: skewX(20deg);
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+            #main__content__buttons__watch_trailler {
+                color: $white;
+                padding: 8px 30px;
+                border: 4px solid $semi-dark-green;
+                transform: skewX(-20deg);
+                transition: 0.2s ease-in-out;
+                p {
+                    transform: skewX(20deg);
+                }
+                &:hover {
+                    background-color: $semi-dark-green;
+                }
             }
         }
     }
